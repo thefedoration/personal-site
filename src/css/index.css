@@ -2,19 +2,15 @@ html{
     /* background: #022C9E linear-gradient(to bottom right, #001E48, #022C9E); */
     background: transparent linear-gradient(to bottom right, #001E48 0%, #E91E63 130%);
     color: white;
-}
-
-body{
-    position:fixed;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
     font-family: sans-serif;
     font-size: small;
 }
 
-.shadow{
+body{
+
+}
+
+/*.shadow{
     position:fixed;
     top:0;
     bottom:0;
@@ -22,15 +18,15 @@ body{
     left:0;
     background-color: rgba(0,0,0,0.25);
     z-index:0;
-}
+}*/
 
 .content{
-    position:fixed;
+    /*position:fixed;
     top:0;
     bottom:0;
     right:0;
     left:0;
-    /*display:flex;
+    display:flex;
     flex-direction:column;*/
 }
 
@@ -83,12 +79,15 @@ body{
 }
 .content .main .description h1{
     margin-top:0;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
     font-size: -webkit-xxx-large;
 }
 .content .main .description p{
     margin:0 0 10px;
-    opacity: 0.9;
+    font-size:medium;
 }
+
+
 
 
 .content .main .avatar-container{
@@ -106,4 +105,24 @@ body{
 }
 .content .main .avatar-container .avatar .avatar-image{
 
+}
+
+
+@media(max-width:600px){
+    .content .main .description,
+    .content .main .avatar-container{
+        min-width:100%;
+        margin:20px 0;
+    }
+
+    .content .main .avatar-container .avatar{
+        margin: 0 auto;
+        height:150px;
+        width:150px;
+    }
+
+    .content .main .description h1{
+        margin-top:0;
+        font-size: xx-large;
+    }
 }
