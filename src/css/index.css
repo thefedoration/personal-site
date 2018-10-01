@@ -1,0 +1,109 @@
+html{
+    /* background: #022C9E linear-gradient(to bottom right, #001E48, #022C9E); */
+    background: transparent linear-gradient(to bottom right, #001E48 0%, #E91E63 130%);
+    color: white;
+}
+
+body{
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+.shadow{
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color: rgba(0,0,0,0.25);
+    z-index:0;
+}
+
+.content{
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    /*display:flex;
+    flex-direction:column;*/
+}
+
+.content header{
+    margin: 10px;
+}
+
+.content header .nav{
+
+}
+.content header .nav-item{
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-left: 10px;
+}
+.content header .nav-item:hover{
+    background-color:rgba(0,0,0,0.25);
+}
+.content header .nav-item.title{
+    margin-left: 0px;
+}
+
+
+.content footer{
+    padding:20px;
+}
+.content footer .social-icons{
+
+}
+.content footer .social-icons a{
+    opacity:0.5;
+    cursor:pointer;
+    margin-right:10px;
+}
+.content footer .social-icons a:hover{
+    opacity:1;
+}
+
+.content .main{
+    padding:20px;
+    width:850px;
+    max-width:100%;
+    margin: 0 auto;
+}
+
+.content .main .description{
+    padding-right:20px;
+    max-width:455px;
+}
+.content .main .description h1{
+    margin-top:0;
+    font-size: -webkit-xxx-large;
+}
+.content .main .description p{
+    margin:0 0 10px;
+    opacity: 0.9;
+}
+
+
+.content .main .avatar-container{
+
+}
+.content .main .avatar-container .avatar{
+    height:200px;
+    width:200px;
+    margin-left: auto;
+    background: #eee;
+    border: 5px solid white;
+    overflow: hidden;
+    border-radius:100%;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+}
+.content .main .avatar-container .avatar .avatar-image{
+
+}
