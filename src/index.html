@@ -16,16 +16,32 @@
         <script type='text/javascript' src="./js/index.js"></script>
     </head>
     <body>
-        <section id="banner" class="scrollsections layout horizontal-reverse wrap">
-            <div class="avatar-container flex-1 flex-width-200">
-                <div class="avatar">
-                    <img src="./img/fed.jpg" alt="Fedor Garin"/>
-                </div>
+        <header class="layout horizontal">
+            <div class="nav layout horizontal-reverse">
+                <div class="nav-item title">Fedor Garin</div>
             </div>
-            <div class="description flex-2 flex-width-200">
-                <h1>Hi there, I'm Fedor.</h1>
-                <p>I like adventures and creating things that might be useful for myself or others</p>
-                <p>I currently live in New York City and spend most of my time building up next-generation hiring technology at <a class="baby-blue" href="https://www.pymetrics.com/">pymetrics</a></p>
+            <div class="nav layout horizontal grow end-justified">
+                <a>
+                    <div class="nav-item">About</div>
+                </a>
+                <div class="nav-item">Creations</div>
+                <div class="nav-item">Blog</div>
+                <div class="nav-item">Contact</div>
+            </div>
+        </header>
+
+        <section id="banner" class="scrollsections layout vertical center-justified">
+            <div class="content-wrap layout horizontal-reverse wrap">
+                <div class="avatar-container flex-1 flex-width-200">
+                    <div class="avatar">
+                        <img src="./img/fed.jpg" alt="Fedor Garin"/>
+                    </div>
+                </div>
+                <div class="description flex-2 flex-width-200">
+                    <h1>Hi there, I'm Fedor.</h1>
+                    <p>I like adventures and creating things that might be useful for myself or others</p>
+                    <p>I currently live in New York City and spend most of my time building up next-generation hiring technology at <a class="baby-blue" href="https://www.pymetrics.com/">pymetrics</a></p>
+                </div>
             </div>
         </section>
         <section id="about" class="scrollsections">About</section>
@@ -33,29 +49,13 @@
         <section id="blog" class="scrollsections">Blog</section>
         <section id="contact" class="scrollsections">Contact</section>
 
-        <!--<div class="shadow"></div>-->
-
-        <!--<div class="content layout vertical">-->
-            <!--<header class="layout horizontal">-->
-                <!--<div class="nav layout horizontal-reverse">-->
-                    <!--<div class="nav-item title">Fedor Garin</div>-->
-                <!--</div>-->
-                <!--<div class="nav layout horizontal grow end-justified">-->
-                    <!--<div class="nav-item">About</div>-->
-                    <!--<div class="nav-item">Creations</div>-->
-                    <!--<div class="nav-item">Blog</div>-->
-                    <!--<div class="nav-item">Contact</div>-->
-                <!--</div>-->
-            <!--</header>-->
-
-            <!--<footer>-->
-                <!--<div class="social-icons">-->
-                    <!--<a href=""><i class="fa fa-linkedin"></i></a>-->
-                    <!--<a href=""><i class="fa fa-instagram"></i></a>-->
-                    <!--<a href=""><i class="fa fa-facebook"></i></a>-->
-                    <!--<a href=""><i class="fa fa-angellist"></i></a>-->
-                <!--</div>-->
-            <!--</footer>-->
-        <!--</div>-->
+        <footer>
+            <div class="social-icons">
+                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-angellist"></i></a>
+            </div>
+        </footer>
     </body>
 </html>

@@ -467,15 +467,3 @@ a{
 .baby-blue{
     color: #74b9ff;
 }
-
-.page-wrap{
-    width:1040px;
-    max-width:100%;
-    margin: 0 auto;
-}
-
-.content-wrap{
-    width:850px;
-    max-width:100%;
-    margin: 0 auto;
-}
