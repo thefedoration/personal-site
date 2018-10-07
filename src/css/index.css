@@ -1,14 +1,20 @@
 html{
-    /* background: #022C9E linear-gradient(to bottom right, #001E48, #022C9E); */
-    background: transparent linear-gradient(to bottom right, #001E48 0%, #E91E63 130%);
-    background: #001E48;
+
+}
+
+body{
     color: white;
     font-family: sans-serif;
     font-size: small;
 }
 
-body{
-
+body .wallpaper{
+    background: transparent linear-gradient(to bottom right, #001E48 0%, #E91E63 130%);
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    position: fixed;
 }
 
 header{
@@ -65,6 +71,10 @@ section .content-wrap{
     width:100%;
     max-width:850px;
     margin: 0 auto;
+}
+
+section {
+
 }
 
 #banner{
