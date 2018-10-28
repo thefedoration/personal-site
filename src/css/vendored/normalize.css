@@ -467,3 +467,15 @@ a{
 .baby-blue{
     color: #74b9ff;
 }
+
+.watermelon {
+    color: #FF4688;
+}
+
+.dim{
+    opacity:0.75;
+}
+
+.superdim{
+    opacity:0.5;
+}

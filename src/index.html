@@ -14,11 +14,13 @@
         <script type='text/javascript' src="./js/vendored/jquery-plugins.js"></script>
         <script type='text/javascript' src="./js/vendored/scroll-sections.min.js"></script>
         <script type='text/javascript' src="./js/index.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     </head>
     <body>
         <div class="wallpaper"></div>
 
-        <header class="layout horizontal">
+        <header id="scrollsections-navigation" class="layout horizontal">
             <div class="nav layout horizontal-reverse">
                 <a href="#banner">
                     <div class="nav-item title">Fedor Garin</div>
@@ -28,20 +30,21 @@
                 <a href="#about">
                     <div class="nav-item">About</div>
                 </a>
-                <a href="#creations">
-                    <div class="nav-item">Creations</div>
-                </a>
-                <a href="#blog">
-                    <div class="nav-item">Blog</div>
-                </a>
                 <a href="#contact">
                     <div class="nav-item">Contact</div>
                 </a>
             </div>
+
+            <!--<nav id="scrollsections-navigation">-->
+                <!--<a href="#works" title="">Works</a>-->
+                <!--<a href="#home" title="">Home</a>-->
+                <!--<a href="#bio" title="">Biography</a>-->
+                <!--<a href="#clients" title="">Clients</a>-->
+            <!--</nav>-->
         </header>
 
         <section id="banner" class="scrollsections layout vertical center-justified">
-            <div class="content-wrap layout horizontal-reverse wrap">
+            <div class="content-wrap layout vertical center-algin">
                 <div class="avatar-container flex-1 flex-width-200">
                     <div class="avatar">
                         <img src="./img/fed.jpg" alt="Fedor Garin"/>
@@ -49,58 +52,68 @@
                 </div>
                 <div class="description flex-2 flex-width-200">
                     <h1>Hi there, I'm Fedor.</h1>
-                    <p>I like creating things that might be useful for myself or others.</p>
-                    <p>I currently live in New York City and spend most of my time building up next-generation hiring technology at <a class="baby-blue" href="https://www.pymetrics.com/">pymetrics</a>.</p>
+                    <p>I like creating software that is useful for myself or others.</p>
+                    <p>I currently live in New York City and spend most of my time building up next-generation hiring technology at <a href="https://www.pymetrics.com/">pymetrics</a>.</p>
                 </div>
             </div>
         </section>
         <section id="about" class="scrollsections layout vertical center-justified">
             <div class="content-wrap layout horizontal wrap">
                 <div class="avatar-container flex-1 flex-width-200">
-                    <h2>About</h2>
+                    <h2 class="superdim">About</h2>
                 </div>
                 <div class="description flex-4 flex-width-200">
-                    <p>lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi </p>
-                </div>
-            </div>
-        </section>
-        <section id="creations" class="scrollsections layout vertical center-justified">
-            <div class="content-wrap layout horizontal wrap">
-                <div class="avatar-container flex-1 flex-width-200">
-                    <h2>Creations</h2>
-                </div>
-                <div class="description flex-4 flex-width-200">
-                    <p>lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi </p>
-                </div>
-            </div>
-        </section>
-        <section id="blog" class="scrollsections layout vertical center-justified">
-            <div class="content-wrap layout horizontal wrap">
-                <div class="avatar-container flex-1 flex-width-200">
-                    <h2>Blog</h2>
-                </div>
-                <div class="description flex-4 flex-width-200">
-                    <p>lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi </p>
+                    <table cellpadding="10">
+                        <tr>
+                            <td><i class="fa fa-map-marker"></i></td>
+                            <td>Origins</td>
+                            <td>Vladivostok, 1991</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-language"></i></td>
+                            <td>Languages</td>
+                            <td>Russian, little bit of English</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-code"></i></td>
+                            <td>Programming</td>
+                            <td>Python, Javascript, Swift</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-soccer-ball-o"></i></td>
+                            <td>Sports</td>
+                            <td>Volleyball, Ping Pong, Muai Thai, Track and Field, Judo</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-thumbs-o-up"></i></td>
+                            <td>Interests</td>
+                            <td>Traveling, cooking, martial arts, personal analytics</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </section>
         <section id="contact" class="scrollsections layout vertical center-justified">
             <div class="content-wrap layout horizontal wrap">
                 <div class="avatar-container flex-1 flex-width-200">
-                    <h2>Contact</h2>
+                    <h2 class="superdim">Contact</h2>
                 </div>
                 <div class="description flex-4 flex-width-200">
-                    <p>lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi lorem ipsum lorem ipsum kjhfs lkejd id elj asuh lqlwi </p>
+                    <h2>
+                        <a href="mailto:contact@fedorgarin.com">hello@fedorgarin.com</a>
+                    </ph2>
                 </div>
             </div>
         </section>
 
         <footer>
             <div class="social-icons">
-                <a href=""><i class="fa fa-linkedin"></i></a>
-                <a href=""><i class="fa fa-instagram"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-angellist"></i></a>
+                <a href="https://www.linkedin.com/in/fedor-garin-06151632/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/thefedoration8/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/fedorgarin"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/thefedoration"><i class="fa fa-github"></i></a>
+                <a href="https://gyrosco.pe/fedorgarin/zero/"><i class="fa fa-map-marker"></i></a>
+                <a href="https://angel.co/fedorgarin"><i class="fa fa-angellist"></i></a>
             </div>
         </footer>
     </body>

@@ -4,12 +4,14 @@ html{
 
 body{
     color: white;
-    font-family: sans-serif;
+    font-family: Raleway, sans-serif;
     font-size: small;
 }
 
 body .wallpaper{
-    background: transparent linear-gradient(to bottom right, #001E48 0%, #E91E63 130%);
+
+    background-image: linear-gradient( 135deg, #F05F57 -50%, #360940 150%);
+    background-image: linear-gradient( 135deg, #92FFC0 -100%, #002661 120%);
     height: 100%;
     width: 100%;
     top:0;
@@ -34,6 +36,8 @@ header .nav-item{
     border-radius:5px;
     cursor:pointer;
     margin-left: 10px;
+    -webkit-transition: background-color 0.25s;
+    transition: background-color 0.25s;
 }
 header .nav-item:hover{
     background-color:rgba(0,0,0,0.25);
@@ -83,10 +87,11 @@ section {
 
 #banner .description{
     padding-right:20px;
-    max-width:455px;
+    max-width:460px;
+    text-align:center;
+    margin:0 auto;
 }
 #banner .description h1{
-    margin-top:0;
     text-shadow: 0 1px 2px rgba(0,0,0,0.5);
     font-size: -webkit-xxx-large;
 }
@@ -101,7 +106,7 @@ section {
 #banner .avatar-container .avatar{
     height:200px;
     width:200px;
-    margin-left: auto;
+    margin: 0 auto;
     background: #eee;
     border: 5px solid white;
     overflow: hidden;
@@ -110,6 +115,23 @@ section {
 }
 #banner .avatar-container .avatar .avatar-image{
 
+}
+
+/* overwrites custom scrollsections css */
+#scrollsections-navigation {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+}
+#scrollsections-navigation a {
+
+}
+#scrollsections-navigation a.active-scrollsection .nav-item {
+    background-color:rgba(0,0,0,0.25);
 }
 
 
