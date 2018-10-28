@@ -8,18 +8,11 @@ window.onload = function(){
         isMobile = true;
     }
 
-    // get config
-    var config = {
-        createNavigation: false,
-		navigation: true,
+    // enable scrollsections if not mobile
+    if (!isMobile){
+        $('body .scrollsections').scrollSections({
+            createNavigation: false,
+            navigation: true,
+        });
     }
-
-    // modify config if mobile
-    if (isMobile){
-        config['mousewheel'] = false;
-        config['scrollbar'] = false;
-    }
-
-    // enable scrollsections
-    $('body .scrollsections').scrollSections(config);
 }
