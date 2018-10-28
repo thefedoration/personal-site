@@ -81,12 +81,19 @@ section {
 
 }
 
+section .section-title{
+    margin-right:10px;
+}
+
+section .section-contents{
+
+}
+
 #banner{
 
 }
 
 #banner .description{
-    padding-right:20px;
     max-width:460px;
     text-align:center;
     margin:0 auto;
@@ -115,6 +122,18 @@ section {
 }
 #banner .avatar-container .avatar .avatar-image{
 
+}
+
+#about-table{
+
+}
+
+#about-table td{
+    padding:10px;
+}
+#about-table i{
+    width:20px;
+    text-align:center;
 }
 
 /* overwrites custom scrollsections css */
@@ -151,5 +170,13 @@ section {
     #banner .description h1{
         margin-top:0;
         font-size: xx-large;
+    }
+
+    #about-table td{
+        padding:0 5px 10px 0;
+    }
+
+    section .section-title{
+        min-width: 100%;
     }
 }
